@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
+    <link rel="stylesheet" href="./css/main.min.css">    
+</head>
+<body>
+    <header class="header">
+        <nav class="container menu">
+            <a href="./index.html" class="logo"><span class="logo-web">Web</span><span class="logo-studio">Studio</span></a>
+            <ul class="menu__list list">
+                <li class="menu__item">
+                    <a href="./index.html" class="menu__link">Студия</a>
+                </li>
+                <li class="menu__item">
+                    <a href="./portfolio.html" class="menu__link menu__link--current">Портфолио</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#" class="menu__link">Контакты</a>
+                </li>
+            </ul>
+            <ul class="menu-contacts list">
+                <li class="menu-contacts__item">
+                    <a href="mailto:info@devstudio.com" class="menu-contacts__link">
+                        <svg class="menu-contacts__icon-mail" aria-hidden="true">
+                            <use href="./images/sprite.svg#icon-envelope"></use>
+                        </svg>
+                        info@devstudio.com
+                    </a>
+                </li>
+                <li class="menu-contacts__item">
+                    <a href="tel:+380961111111" class="menu-contacts__link">
+                        <svg class="menu-contacts__icon-phone" aria-hidden="true">
+                            <use href="./images/sprite.svg#icon-smartphone"></use>
+                        </svg>
+                        +38 096 111 11 11
+                    </a>
+                </li>
+            </ul>
+        </nav>
+</header>
+    <main>
+        <section class="section portfolio__section">
+            <div class="container">
+                <h1 class="visually-hidden">Наши работы</h1>
+                <ul class="nav-filter list">
+                    <li class="nav-filter__item">
+                        <button type="button" class="nav-filter__btn">Все</button>
+                    </li>
+                    <li class="nav-filter__item">
+                        <button type="button" class="nav-filter__btn">Веб-сайты</button>
+                    </li>
+                    <li class="nav-filter__item">
+                        <button type="button" class="nav-filter__btn">Приложения</button>
+                    </li>
+                    <li class="nav-filter__item">
+                        <button type="button" class="nav-filter__btn">Дизайн</button>
+                    </li>
+                    <li class="nav-filter__item">
+                        <button type="button" class="nav-filter__btn">Маркетинг</button>
+                    </li>
+                </ul>
+                <ul class="projects__list list">
+                    <li class="projects__item">
+                        <a href="#" class="projects__link">
+                            <div class="projects__overlay-link">
+                                <img src="./images/technokryak.jpg" alt="Веб сайт Технокряк" width="370" height="294" class="projects__img">
+                                <div class="projects__overlay-hidden">
+                                    <p>
+                                        This content is hidden through transformation and only appears when hovering over the link image
+                                    </p>
+                                </div>
+                            </div>  
+                            <div class="project__item-card">
+                                <h2 class="project__title">Технокряк</h2>
+                                <p class="project__type">Веб-сайт</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="projects__item">
+                        <a href="#" class="projects__link">
+                            <div class="projects__overlay-link">
+                                <img src="./images/poster-bbal.jpg" alt="Дизайн афиши бля баскетбольной игры" width="370" height="294" class="projects__img">
+                                <div class="projects__overlay-hidden">
+                                    <p>
+                                        This content is hidden through transformation and only appears when hovering over the link image
+                                    </p>
+                                </div>
+                            </div>
+                                <div class="project__item-card">
+                                    <h2 class="project__title">Постер New Orlean vs Golden Star</h2>
+                                    <p class="project__type">Дизайн</p>
+                                </div>
+                            </a>
+                    </li>
+                    <li class="projects__item">
+                        <a href="#" class="projects__link">
+                            <div class="projects__overlay-link">
+                                <img src="./images/seafood-restaurant.jpg" alt="Приложение для Ресторана морепродуктов" width="370" height="294" class="projects__img">
+                                <div class="projects__overlay-hidden">
+                                    <p>
+                                        This content is hidden through transformation and only appears when hovering over the link image
+                                    </p>
+                            </div>
+                            </div>
+                                <div class="project__item-card">
+                                    <h2 class="project__title">Ресторан Seafood</h2>
+                                    <p class="project__type">Приложение</p>
+                                </div>
+                            </a>
+                    </li>
+                    <li class="projects__item">
+                        <a href="#" class="projects__link">
+                            <div class="projects__overlay-link">
+                                <img src="./images/project-prime.jpg" alt="Маркетинговый Проект Прайм" width="370" height="294" class="projects__img">
+                                <div class="projects__overlay-hidden">
+                                    <p>
+                                        This content is hidden through transformation and only appears when hovering over the link image
+                                    </p>
+                                </div>
+                            </div>  
+                            <div class="project__item-card">
+                                <h2 class="project__title">Проект Prime</h2>
+                                <p class="project__type">Маркетинг</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="projects__item">
+                        <a href="#" class="projects__link">
+                            <div class="projects__overlay-link">
+                                <img src="./images/project-boxes.jpg" alt="Приложение Коробки" width="370" height="294" class="projects__img">
+                                <div class="projects__overlay-hidden">
+                                    <p>
+                                        This content is hidden through transformation and only appears when hovering over the link image
+                                    </p>
+                                </div>
+                            </div>  
+                            <div class="project__item-card">
+                                <h2 class="project__title">Проект Boxes</h2>
+                                <p class="project__type">Приложение</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="projects__item">
+                        <a href="#" class="projects__link">
+                            <div class="projects__overlay-link">
+                                <img src="./images/inspiration-has-no-borders.jpg" alt="Веб сайт Вдохновение" width="370" height="294" class="projects__img">
+                                <div class="projects__overlay-hidden">
+                                    <p>
+                                        This content is hidden through transformation and only appears when hovering over the link image
+                                    </p>
+                                </div>
+                            </div>  
+                            <div class="project__item-card">
+                                <h2 class="project__title">Inspiration has no Borders</h2>
+                                <p class="project__type">Веб-сайт</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="projects__item">
+                        <a href="#" class="projects__link">
+                            <div class="projects__overlay-link">
+                                <img src="./images/limited-edition.jpg" alt="Дизайн издания" width="370" height="294" class="projects__img">
+                                <div class="projects__overlay-hidden">
+                                    <p>
+                                        This content is hidden through transformation and only appears when hovering over the link image
+                                    </p>
+                                </div>
+                            </div>  
+                            <div class="project__item-card">
+                                <h2 class="project__title">Издание Limited Edition</h2>
+                                <p class="project__type">Дизайн</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="projects__item">
+                        <a href="#" class="projects__link">
+                            <div class="projects__overlay-link">
+                                <img src="./images/project-lab.jpg" alt="Маркетинговый проект LAB" width="370" height="294" class="projects__img">
+                                <div class="projects__overlay-hidden">
+                                    <p>
+                                        This content is hidden through transformation and only appears when hovering over the link image
+                                    </p>
+                                </div>
+                            </div>  
+                            <div class="project__item-card">
+                                <h2 class="project__title">Проект LAB</h2>
+                                <p class="project__type">Маркетинг</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="projects__item">
+                        <a href="#" class="projects__link">
+                            <div class="projects__overlay-link">
+                                <img src="./images/app-gw.jpg" alt="Приложение для бизнеса" width="370" height="294" class="projects__img">
+                                <div class="projects__overlay-hidden">
+                                    <p>
+                                        This content is hidden through transformation and only appears when hovering over the link image
+                                    </p>
+                                </div>
+                            </div>  
+                            <div class="project__item-card">
+                                <h2 class="project__title">Growing Business</h2>
+                                <p class="project__type">Приложение</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>     
+        </section>
+    </main>
+    <footer class="section footer">
+        <div class="container footer__container">
+            <div class="footer__left-container">
+                <a href="./index.html" class="footer__logo"><span class="logo-web">Web</span><span class="logo-studio--white">Studio</span></a>
+        <address>
+            <ul class="footer__adress list">
+                <li class="footer__adress-item">
+                    <a href="https://goo.gl/maps/piqngm7oDQpEDh6u6" target="_blank" rel="noopener nofollow noreferrer" class="footer__contacts">г. Киев, пр-т Леси Украинки, 26</a>
+                </li>
+                <li class="footer__adress-item">
+                    <a href="mailto:info@devstudio.com" class="footer__contacts">info@devstudio.com</a>
+                </li>
+                <li class="footer__adress-item">
+                    <a href="tel:+380961111111" class="footer__contacts">+38 096 111 11 11</a>
+                </li>
+            </ul>
+        </address>
+            </div>
+            <div class="footer__middle-container">
+                <p class="footer__join">присоединяйтесь</p>
+                <div class="social">
+                    <ul class="social__list list">
+                        <li class="social__network">
+                            <a href="#" class="social__link--footer">
+                                <svg class="social__icon--footer icon-instagram" aria-label="Перейти в Instagram">
+                                    <use href="./images/sprite.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social__network">
+                            <a href="#" class="social__link--footer">
+                                <svg class="social__icon--footer icon-twitter" aria-label="Перейти в Twitter">
+                                    <use href="./images/sprite.svg#icon-twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social__network">
+                            <a href="#" class="social__link--footer">
+                                <svg class="social__icon--footer icon-facebook" aria-label="Перейти в Facebook">
+                                    <use href="./images/sprite.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social__network">
+                            <a href="#" class="social__link--footer">
+                                <svg class="social__icon--footer icon-linkedin" aria-label="Перейти в LinkeIn">
+                                    <use href="./images/sprite.svg#icon-linkedin"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__right-container">
+                <p class="footer__join">Подпишитесь на рассылку</p>
+                <form class="footer__subscription">
+                    <label class="footer__subscription-label">
+                        <input class="footer__subscription-email" type="email" name="user-email-footer" placeholder="E-mail">
+                    </label>
+                    <button type="submit" class="btn footer__subscription-btn">Подписаться</button>
+                </form>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

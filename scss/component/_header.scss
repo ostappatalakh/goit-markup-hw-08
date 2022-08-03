@@ -1,0 +1,134 @@
+.header {
+    display: flex;
+    align-items: center;
+    background-color: var(--color-white);
+    border-bottom: 1px solid #ECECEC;
+    position: fixed;
+    min-height: 60px;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    &__desktop-menu {
+        width: 100%;
+    }
+
+    &__inner {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+
+        @media (min-width: 768px) {
+            align-items: center;
+            display: flex;
+        }
+    }
+
+    
+    &__mobile-menu {
+        @media (min-width: 768px) {
+            display: none;
+        }
+    }
+
+    &__menu-button {
+        min-height: 40px;
+        min-width: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      
+        margin: 0;
+        padding: 0;
+        background-color: transparent;
+        cursor: pointer;
+        border: none;
+        outline: none;
+    }
+}
+
+@media (min-width: 768px) {
+    .header__menu-button {
+        display: none;
+    }
+}
+
+.wrapper__menu__list {
+    @media (min-width: 1200px) {
+        display: flex;
+    }
+}
+
+.wrapper__menu__contacts {
+    @media (min-width: 1200px) {
+        display: flex;
+        margin-left: auto;
+    }
+}
+
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    padding: 48px 40px;
+    background-color: var(--color-white);
+    z-index: 999;
+    transform: translateX(100%);
+    transition: transform var(--transition-timing-function);
+
+    &.is-open {
+        transform: translateX(0);
+      }
+}
+
+.header__menu-button-close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+}
+
+.mobile-menu__item:not(:last-child) {
+    margin-bottom: 20px;
+} 
+
+.mobile-menu__list {
+    margin-bottom: 302px;
+}
+
+.mobile-menu__link {
+    text-decoration: none;
+    color: var(--text-color-black);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 47px;
+    letter-spacing: 0.02em;
+    
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color-main);
+    }
+}
+
+.mobile-contacts__item {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    color: var(--text-color-gray);
+}
+
+.mobile-contacts__list>.mobile-contacts__item {
+    margin-bottom: 32px;
+}
+
+.mobile-contacts__link {
+    text-decoration: none;
+    color: var(--text-color-gray);
+}

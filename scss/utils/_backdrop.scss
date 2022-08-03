@@ -1,0 +1,61 @@
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    transition: opacity 250ms var(--transition-timing-function), visibility 250ms var(--transition-timing-function);
+}
+
+.modal {
+    .backdrop.is-hidden & {
+        transform: translate(-50%, -50%) scale(1.3);
+    }
+}
+
+.backdrop__modal {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    width: 528px;
+    height: 581px;
+    background-color: var(--color-white);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    transition: transform 250ms var(--transition-timing-function);
+}
+
+.backdrop__close-modal {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    display: flex;
+    width: 30px;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    background: var(--color-white);
+    transition: transform 500ms var(--transition-timing-function);
+
+    &:hover {
+        transform: rotate(90deg);
+    }
+}
+
+.backdrop__icon-close {
+    .backdrop__close-modal:hover & {
+        fill: var(--accent-color-main);
+    }
+}
+
+.backdrop.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}

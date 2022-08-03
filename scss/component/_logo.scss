@@ -1,0 +1,45 @@
+.logo {
+    display: flex;
+    font-family: raleway, sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.17;
+    text-decoration: none;
+    margin-right: 88px;
+    // padding: 16px 15px;
+
+    @media (min-width: 768px) {
+        // padding: 26px 15px; 
+    }
+
+    @media (min-width: 1200px) {
+        font-size: 26px;
+        line-height: 1.19;
+        margin-right: 93px;
+    }
+}
+
+.footer__logo {
+    display: flex;
+    margin-bottom: 20px;
+    font-family: raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    text-decoration: none;
+}
+
+.logo-web {
+    display: block;
+    color: var(--accent-color-main);
+}
+
+.logo-studio {
+    display: block;
+    color: var(--text-color-black);
+}
+
+.logo-studio--white {
+    display: block;
+    color: var(--color-white);
+}
