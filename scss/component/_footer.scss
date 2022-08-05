@@ -2,6 +2,13 @@
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: #2F303A;
+
+    &__input {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .footer__container {
@@ -99,7 +106,7 @@
 
 .footer__subscription {
     display: flex;
-    outline: 2px solid tomato;
+    // outline: 2px solid tomato;
     flex-direction: column;
     align-items: center;
 }
@@ -107,10 +114,10 @@
 .footer__subscription-email {
     // display: flex;
     color: var(--text-color-gray);
-    width: 358px;
+    width: 100%;
     height: 50px;
     padding: 15px 16px;
-    
+    margin-bottom: 20px;
     border-radius: 4px;
     background: transparent;
     border: 1px solid rgba(255, 255, 255, 0.3);
