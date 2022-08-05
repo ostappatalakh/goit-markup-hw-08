@@ -128,10 +128,20 @@
 }
 
 .footer__subscription-label {
-    display: block;
-    flex-direction: column;
+    // display: block;
+    text-align: center;
+    text-transform: uppercase;    
     width: 100%;
-    justify-content: center;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    padding-top: 15px;
+    margin-bottom: 20px;
+    color: var(--color-white);
+    
 }
 
 .footer__subscription-btn {
