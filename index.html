@@ -78,8 +78,8 @@
                         </svg>
                     </button>
                     <ul class="mobile-menu__list list">
-                        <li class="mobile-menu__item"><a href="#" class="mobile-menu__link">Студия</a></li>
-                        <li class="mobile-menu__item"><a href="#" class="mobile-menu__link">Портфолио</a></li>
+                        <li class="mobile-menu__item"><a href="./index.html" class="mobile-menu__link mobile-menu__link--current">Студия</a></li>
+                        <li class="mobile-menu__item"><a href="./portfolio.html" class="mobile-menu__link">Портфолио</a></li>
                         <li class="mobile-menu__item"><a href="#" class="mobile-menu__link">Контакты</a></li>
                     </ul>
                     <ul class="mobile-contacts__list list">
@@ -96,7 +96,7 @@
                 </div>
             </div>
     </header>
-    <!-- <main>
+    <main>
         <section class="section hero__section">
             <div class="container">
                 <div class="hero">
@@ -178,7 +178,7 @@
                 </h2>
                 <ul class="stuff__list list">
                     <li class="stuff__item">
-                        <img src="./images/stuff-demyanenko.jpg" alt="Игорь Демьяненко" width="270" height="260" class="stuff__img">
+                        <img src="./images/stuff-demyanenko.jpg" alt="Игорь Демьяненко" class="stuff__img">
                         <div class="stuff__info">
                             <h3 class="stuff__name">Игорь Демьяненко</h3>
                             <p class="stuff__position">Product Designer</p>
@@ -217,7 +217,7 @@
                         </div>
                     </li>
                     <li class="stuff__item">
-                        <img src="./images/stuff-repina.jpg" alt="Ольга Репин" width="270" height="260" class="stuff__img">
+                        <img src="./images/stuff-repina.jpg" alt="Ольга Репин" class="stuff__img">
                         <div class="stuff__info">
                             <h3 class="stuff__name">Ольга Репина</h3>
                             <p class="stuff__position">Frontend Developer</p>
@@ -256,7 +256,7 @@
                         </div>
                     </li>
                     <li class="stuff__item">
-                        <img src="./images/stuff-tarasov.jpg" alt="Николай Тарасов" width="270" height="260" class="stuff__img">
+                        <img src="./images/stuff-tarasov.jpg" alt="Николай Тарасов" class="stuff__img">
                         <div class="stuff__info">
                             <h3 class="stuff__name">Николай Тарасов</h3>
                             <p class="stuff__position">Marketing</p>
@@ -295,7 +295,7 @@
                         </div>
                   </li>
                     <li class="stuff__item">
-                        <img src="./images/stuff-iermakov.jpg" alt="Михаил Ермаков" width="270" height="260" class="stuff__img">
+                        <img src="./images/stuff-iermakov.jpg" alt="Михаил Ермаков" class="stuff__img">
                         <div class="stuff__info">
                             <h3 class="stuff__name">Михаил Ермаков</h3>
                             <p class="stuff__position">UI Designer</p>
@@ -397,19 +397,19 @@
         <div class="container footer__container">
             <div class="footer__left-container">
                 <a href="./index.html" class="footer__logo"><span class="logo-web">Web</span><span class="logo-studio--white">Studio</span></a>
-        <address>
-            <ul class="footer__adress list">
-                <li class="footer__adress-item">
-                    <a href="https://goo.gl/maps/piqngm7oDQpEDh6u6" target="_blank" rel="noopener nofollow noreferrer" class="footer__contacts">г. Киев, пр-т Леси Украинки, 26</a>
-                </li>
-                <li class="footer__adress-item">
-                    <a href="mailto:info@devstudio.com" class="footer__contacts">info@devstudio.com</a>
-                </li>
-                <li class="footer__adress-item">
-                    <a href="tel:+380961111111" class="footer__contacts">+38 096 111 11 11</a>
-                </li>
-            </ul>
-        </address>
+            <address>
+                <ul class="footer__adress list">
+                    <li class="footer__adress-item">
+                        <a href="https://goo.gl/maps/piqngm7oDQpEDh6u6" target="_blank" rel="noopener nofollow noreferrer" class="footer__contacts footer__address--navi">г. Киев, пр-т Леси Украинки, 26</a>
+                    </li>
+                    <li class="footer__adress-item">
+                        <a href="mailto:info@devstudio.com" class="footer__contacts">info@devstudio.com</a>
+                    </li>
+                    <li class="footer__adress-item">
+                        <a href="tel:+380961111111" class="footer__contacts">+38 096 111 11 11</a>
+                    </li>
+                </ul>
+            </address>
             </div>
             <div class="footer__middle-container">
                 <p class="footer__join">присоединяйтесь</p>
@@ -447,16 +447,16 @@
                 </div>
             </div>
             <div class="footer__right-container">
-                <p class="footer__join">Подпишитесь на рассылку</p>
-                <form class="footer__subscription">
-                    <label class="footer__subscription-label">
-                        <input class="footer__subscription-email" type="email" name="user-email-footer" placeholder="E-mail">
-                    </label>
-                    <button type="submit" class="btn footer__subscription-btn">Подписаться</button>
+                <form class="footer__subscription" name="subscribe-form" autocomplete="on">
+                    <label class="footer__subscription-label" for="subscribe-email">Подпишитесь на рассылку</label>
+                    <div class="footer__input">
+                        <input class="footer__subscription-email" id="subscribe-email" type="email" name="subscribe-form" placeholder="E-mail">
+                        <button type="submit" class="btn footer__subscription-btn">Подписаться</button>
+                    </div>
                 </form>
             </div>
         </div>
-    </footer> -->
+    </footer>
 
 <div class="backdrop is-hidden" data-modal>
     <div class="backdrop__modal">

@@ -3,7 +3,9 @@
 }
 
 .stuff__list {
-    display: flex;    
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;    
 }
 
 .stuff__item {
@@ -11,8 +13,20 @@
     border-radius: 0px 0px 4px 4px;
     background-color: var(--color-white);
 
-    .stuff__list & + & {
-        margin-left: 30px;
+    // .stuff__list & + & {
+    //     margin-left: 30px;
+    // }
+}
+.stuff__img {
+    width: 100%;
+    max-width: 450px;
+
+    @media (min-width: 768px) {
+        max-width: 354px;
+    }
+
+    @media (min-width: 1200px) {
+        max-width: 270px;
     }
 }
 
