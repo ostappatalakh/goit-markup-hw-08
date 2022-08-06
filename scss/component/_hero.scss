@@ -1,3 +1,5 @@
+$hero-image-gradient: linear-gradient(90deg, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)) ;
+
 .hero {
     text-align: center;
 
@@ -7,9 +9,7 @@
         margin-left: auto;
         margin-right: auto;
         background-color: #2F303A;
-        background-image: 
-            linear-gradient( to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
-            url('../images/mobile/hero-mobile.jpg');
+        background-image: $hero-image-gradient, url('../images/mobile/hero-mobile.jpg');
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;    
@@ -22,37 +22,35 @@
         }
 
         @media (min-device-pixel-ratio: 2),
-        (min-resolution: 2dppx),
-        (min-resolution: 2dpi) {
-        background-image: 
-        linear-gradient( to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
-        url("../images/mobile/hero-mobile@2x.jpg");
+                (min-resolution: 2dppx),
+                (min-resolution: 2dpi) {
+        background-image: $hero-image-gradient, url("../images/mobile/hero-mobile@2x.jpg");
         }
 
         @media (min-width: 481px) {
         background-image: 
-        linear-gradient( to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
+        $hero-image-gradient, 
         url(../images/tablet/hero-tablet.jpg);
 
         @media (min-device-pixel-ratio: 2),
         (min-resolution: 2dppx),
         (min-resolution: 2dpi) {
         background-image: 
-        linear-gradient( to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
+        $hero-image-gradient, 
         url(../images/tablet/hero-tablet@2x.jpg);
         }
     }
 
         @media (min-width: 769px) {
             background-image: 
-            linear-gradient( to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
+            $hero-image-gradient, 
             url(../images/hero-img.jpg);
 
                 @media (min-device-pixel-ratio: 2),
                 (min-resolution: 2dppx),
                 (min-resolution: 2dpi) {
                 background-image: 
-                linear-gradient( to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
+                $hero-image-gradient, 
                 url('../images/desktop/hero-img.jpg');
                 }
         }

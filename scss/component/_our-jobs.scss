@@ -12,7 +12,9 @@
 }
 
 .our-jobs__item {
+    display: block;
     position: relative;
+    width: 370px;
 
     &::before {
         content: "";
