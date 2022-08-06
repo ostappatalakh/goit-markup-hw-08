@@ -507,7 +507,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   background-color: #2F303A;
-  background-image: linear-gradient(90deg, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/bg-hero-laptop.jpg");
+  background-image: linear-gradient(90deg, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg-hero-laptop.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -516,8 +516,28 @@ body {
 }
 @media screen and (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx), (-webkit-min-device-pixel-ratio: 0.020833333333333332), (min-resolution: 2dpi) {
   .hero__section {
-    background-image: linear-gradient(90deg, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/bg-hero-laptop@2x.jpg");
+    background-image: linear-gradient(90deg, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/bg-hero-laptop@2x.jpg);
   }
+}
+
+.box {
+  width: 100%;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #2F303A;
+  background-image: url(../images/bg-hero-laptop);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-top: 118px;
+  padding-bottom: 118px;
+}
+
+.test {
+  font-size: 40px;
+  color: red;
+  text-align: center;
 }
 
 .btn {
