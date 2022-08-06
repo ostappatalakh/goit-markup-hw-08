@@ -32,14 +32,14 @@
         @media screen and (min-width: 481px) {
         background-image: 
         linear-gradient( to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
-        url('../images/tablet/hero-tablet.jpg');
+        url(../images/tablet/hero-tablet.jpg);
 
         @media (min-device-pixel-ratio: 2),
         (min-resolution: 2dppx),
         (min-resolution: 2dpi) {
         background-image: 
         linear-gradient( to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
-        url('../images/tablet/hero-tablet@2x.jpg');
+        url(../images/tablet/hero-tablet@2x.jpg);
         }
     }
 
