@@ -159,15 +159,30 @@
                 </h2>
                 <ul class="our-jobs__list list">
                     <li class="our-jobs__item">
-                        <img src="./images/programming.jpg" alt="програмирование" width="370" height="294">
+                        <img 
+                            srcset="./images/desktop/programming.jpg 1x, ./images/desktop/programming@2x.jpg 2x"
+                            src="./images/desktop/programming.jpg" 
+                            alt="програмирование" 
+                            width="370"
+                            >
                         <span class="our-jobs__description">Десктопные приложения</span>
                     </li>
                     <li class="our-jobs__item">
-                        <img src="./images/layout.jpg" alt="верстка" width="370" height="294">
+                        <img 
+                            srcset="./images/desktop/layout.jpg 1x, ./images/desktop/layout@2x.jpg 2x"
+                            src="./images/desktop/layout.jpg" 
+                            alt="верстка" 
+                            width="370"
+                        >
                         <span class="our-jobs__description">Мобильные приложения</span>
                     </li>
                     <li class="our-jobs__item">
-                        <img src="./images/design.jpg" alt="дизайн" width="370" height="294">
+                        <img 
+                            srcset="./images/desktop/design.jpg 1x, ./images/desktop/design@2x.jpg 2x"
+                            src="./images/desktop/design.jpg" 
+                            alt="дизайн" 
+                            width="370"
+                            >
                         <span class="our-jobs__description">Дизайнерские решения</span>
                     </li>
                 </ul>
@@ -180,7 +195,28 @@
                 </h2>
                 <ul class="stuff__list list">
                     <li class="stuff__item">
-                        <img src="./images/stuff-demyanenko.jpg" alt="Игорь Демьяненко" class="stuff__img">
+                        <picture>
+                            <source media="(max-width: 767px)"
+                                    srcset="./images/mobile/stuff-demyanenko.jpg 1x, 
+                                            ./images/mobile/stuff-demyanenko@2x.jpg 2x"
+                                    type="image/jpg" />
+                            
+                            <source media="(min-width: 768px)"
+                                    srcset="./images/tablet/stuff-demyanenko.jpg 1x, 
+                                            ./images/tablet/stuff-demyanenko@2x.jpg 2x"
+                                    type="image/jpg" />
+                            
+                            <source media="(min-width: 1200px)"
+                                    srcset="./images/desktop/stuff-demyanenko.jpg 1x,
+                                            ./images/desktop/stuff-demyanenko@2x.jpg 2x"
+                                    type="image/jpg" />
+                            
+                            <img src="./images/mobile/stuff-demyanenko.jpg" 
+                                    alt="Игорь Демьяненко" 
+                                    width="450" 
+                                    loading="lazy" />
+                        </picture>
+                        <!-- <img src="./images/stuff-demyanenko.jpg" alt="Игорь Демьяненко" class="stuff__img"> -->
                         <div class="stuff__info">
                             <h3 class="stuff__name">Игорь Демьяненко</h3>
                             <p class="stuff__position">Product Designer</p>
