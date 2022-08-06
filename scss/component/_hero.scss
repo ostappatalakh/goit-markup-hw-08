@@ -9,7 +9,7 @@
         background-color: #2F303A;
         background-image: 
             linear-gradient( to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
-            url(../images/hero-img.jpg);
+            url(../../images/Mobile/hero-mobile.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;    
@@ -20,25 +20,63 @@
             padding-top: 200px;
             padding-bottom: 200px;
         }
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 2dppx),
+        (min-resolution: 2dpi) {
+        background-image: 
+        linear-gradient( to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
+        url(../../images/Mobile/hero-mobile@2x.jpg);
+        }
+
+        @media screen and (min-width: 481px) {
+        background-image: 
+        linear-gradient( to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
+        url(../../images/Tablet/hero-tablet.jpg);
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 2dppx),
+        (min-resolution: 2dpi) {
+        background-image: 
+        linear-gradient( to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
+        url(../../images/Tablet/hero-tablet@2x.jpg);
+        }
     }
-    
-    &__title {
-        font-weight: 900;
-        font-size: 26px;
-        line-height: 1.62;
-        max-width: 360px;
-        margin: 0 auto 30px;
-        text-align: center;
-        letter-spacing: 0.06em;
-        text-transform: uppercase;
-        color: var(--color-white);
-    
-    
-        @media (min-width: 1200px) {
-            font-size: 44px;
-            line-height: 1.36;
-            max-width: 696px;
+
+        @media (min-width: 769px) {
+        background-image: 
+        linear-gradient( to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
+        url(../../images/Desktop/hero-img.jpg);
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 2dppx),
+        (min-resolution: 2dpi) {
+        background-image: 
+        linear-gradient( to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
+        url(../../images/Desktop/hero-img.jpg);
         }
     }
 }
+}
+.hero__title {
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.62;
+    max-width: 360px;
+    margin: 0 auto 30px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--color-white);
+
+
+    @media (min-width: 1200px) {
+        font-size: 44px;
+        line-height: 1.36;
+        max-width: 696px;
+    }
+}    
+
+   
+
 
