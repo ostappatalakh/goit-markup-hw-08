@@ -30,7 +30,7 @@ $hero-image-gradient: linear-gradient(90deg, rgba(47, 48, 58, 0.4), rgba(47, 48,
     margin-left: auto;
     margin-right: auto;
     background-color: #2F303A;
-    background-image: $hero-image-gradient, url('../../images/bg-hero-laptop.jpg');
+    background-image: $hero-image-gradient, url(../images/bg-hero-laptop.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;    
@@ -40,7 +40,7 @@ $hero-image-gradient: linear-gradient(90deg, rgba(47, 48, 58, 0.4), rgba(47, 48,
     @media screen and (min-device-pixel-ratio: 2),
     (min-resolution: 2dppx),
     (min-resolution: 2dpi) {
-    background-image: $hero-image-gradient, url('../../images/bg-hero-laptop@2x.jpg');
+    background-image: $hero-image-gradient, url(../../images/bg-hero-laptop@2x.jpg);
     }
 
     // @media (min-width: 481px) {
