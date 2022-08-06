@@ -3,78 +3,77 @@ $hero-image-gradient: linear-gradient(90deg, rgba(47, 48, 58, 0.4), rgba(47, 48,
 .hero {
     text-align: center;
 
-    &__section {
-        width: 100%;
-        max-width: 1600px;
-        margin-left: auto;
-        margin-right: auto;
-        background-color: #2F303A;
-        background-image: $hero-image-gradient, url('../images/mobile/hero-mobile.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;    
-        padding-top: 118px;
-        padding-bottom: 118px;
-
+    &__title {
+        font-weight: 900;
+        font-size: 26px;
+        line-height: 1.62;
+        max-width: 360px;
+        margin: 0 auto 30px;
+        text-align: center;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: var(--color-white);
+    
+    
         @media (min-width: 1200px) {
-            padding-top: 200px;
-            padding-bottom: 200px;
-        }
+            font-size: 44px;
+            line-height: 1.36;
+            max-width: 696px;
+            }
+        }    
+    
+}
 
-        @media (min-device-pixel-ratio: 2),
-                (min-resolution: 2dppx),
-                (min-resolution: 2dpi) {
-        background-image: $hero-image-gradient, url("../images/mobile/hero-mobile@2x.jpg");
-        }
+.hero__section {
+    width: 100%;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #2F303A;
+    background-image: $hero-image-gradient, url('../../images/bg-hero-laptop.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;    
+    padding-top: 118px;
+    padding-bottom: 118px;
 
-        @media (min-width: 481px) {
-        background-image: 
-        $hero-image-gradient, 
-        url(../images/tablet/hero-tablet.jpg);
-
-        @media (min-device-pixel-ratio: 2),
-        (min-resolution: 2dppx),
-        (min-resolution: 2dpi) {
-        background-image: 
-        $hero-image-gradient, 
-        url(../images/tablet/hero-tablet@2x.jpg);
-        }
+    @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 2dppx),
+    (min-resolution: 2dpi) {
+    background-image: $hero-image-gradient, url('../../images/bg-hero-laptop@2x.jpg');
     }
 
-        @media (min-width: 769px) {
-            background-image: 
-            $hero-image-gradient, 
-            url(../images/hero-img.jpg);
+    // @media (min-width: 481px) {
+    // background-image: 
+    // $hero-image-gradient, 
+    // url(../images/tablet/hero-tablet.jpg);
 
-                @media (min-device-pixel-ratio: 2),
-                (min-resolution: 2dppx),
-                (min-resolution: 2dpi) {
-                background-image: 
-                $hero-image-gradient, 
-                url('../images/desktop/hero-img.jpg');
-                }
-        }
-}
-}
-.hero__title {
-    font-weight: 900;
-    font-size: 26px;
-    line-height: 1.62;
-    max-width: 360px;
-    margin: 0 auto 30px;
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: var(--color-white);
+    //     @media (min-device-pixel-ratio: 2),
+    //     (min-resolution: 2dppx),
+    //     (min-resolution: 2dpi) {
+    //     background-image: 
+    //     $hero-image-gradient, 
+    //     url(../images/tablet/hero-tablet@2x.jpg);
+    //     }
+    // }
 
+    // @media (min-width: 769px) {
+    //     background-image: 
+    //     $hero-image-gradient, 
+    //     url(../images/hero-img.jpg);
 
-    @media (min-width: 1200px) {
-        font-size: 44px;
-        line-height: 1.36;
-        max-width: 696px;
-    }
-}    
-
+    //     @media (min-device-pixel-ratio: 2),
+    //     (min-resolution: 2dppx),
+    //     (min-resolution: 2dpi) {
+    //     background-image: 
+    //     $hero-image-gradient, 
+    //     url('../images/desktop/hero-img.jpg');
+    //     }
+    // }
+    // @media (min-width: 1200px) {
+    //     padding-top: 200px;
+    //     padding-bottom: 200px;
+    // }
    
-
+}
 
