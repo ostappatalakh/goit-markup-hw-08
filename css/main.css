@@ -501,26 +501,6 @@ body {
   }
 }
 
-.box {
-  width: 100%;
-  max-width: 1600px;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: #2F303A;
-  background-image: url(../images/bg-hero-laptop.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  padding-top: 118px;
-  padding-bottom: 118px;
-}
-
-.test {
-  font-size: 40px;
-  color: red;
-  text-align: center;
-}
-
 .overlay {
   margin-left: auto;
   margin-right: auto;
@@ -535,24 +515,30 @@ body {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-mobile@2x.jpg");
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 481px) {
   .overlay {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-tablet@1x.jpg");
   }
 }
-@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 2dppx), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 0.020833333333333332), screen and (min-width: 768px) and (min-resolution: 2dpi) {
+@media screen and (min-width: 481px) and (min-device-pixel-ratio: 2), screen and (min-width: 481px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 481px) and (min-resolution: 2dppx), screen and (min-width: 481px) and (-webkit-min-device-pixel-ratio: 0.020833333333333332), screen and (min-width: 481px) and (min-resolution: 2dpi) {
   .overlay {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-tablet@2x.jpg");
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 769px) {
   .overlay {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-desktop@1x.jpg");
   }
 }
-@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 2dppx), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 0.020833333333333332), screen and (min-width: 1200px) and (min-resolution: 2dpi) {
+@media screen and (min-width: 769px) and (min-device-pixel-ratio: 2), screen and (min-width: 769px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 769px) and (min-resolution: 2dppx), screen and (min-width: 769px) and (-webkit-min-device-pixel-ratio: 0.020833333333333332), screen and (min-width: 769px) and (min-resolution: 2dpi) {
   .overlay {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-desktop@2x.jpg");
+  }
+}
+@media (min-width: 769px) {
+  .overlay {
+    padding-top: 200px;
+    padding-bottom: 200px;
   }
 }
 
@@ -1252,7 +1238,7 @@ body {
   font-size: 18px;
   line-height: 1.56;
   letter-spacing: 0.03em;
-  transform: translateY(100%);
+  transform: translateY(101%);
   transition: transform 250ms var(--transition-timing-function);
 }
 .projects__overlay-link:hover .projects__overlay-hidden {
