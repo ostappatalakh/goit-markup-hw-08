@@ -134,10 +134,23 @@ body {
 .container {
   margin-left: auto;
   margin-right: auto;
-  width: 100%;
-  max-width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .header {
@@ -509,6 +522,8 @@ body {
   background-position: center;
   background-size: cover;
   background-color: #2F303A;
+  padding-top: 118px;
+  padding-bottom: 118px;
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx), (-webkit-min-device-pixel-ratio: 0.020833333333333332), (min-resolution: 2dpi) {
   .overlay {
@@ -535,7 +550,7 @@ body {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-desktop@2x.jpg");
   }
 }
-@media (min-width: 769px) {
+@media (min-width: 1200px) {
   .overlay {
     padding-top: 200px;
     padding-bottom: 200px;
